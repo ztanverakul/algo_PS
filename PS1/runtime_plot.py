@@ -1,6 +1,7 @@
 import matplotlib as mpl
 mpl.use("Agg")
 import matplotlib.pyplot as plt
+import math
 
 #n/4
 def N1():
@@ -10,7 +11,7 @@ def N1():
   return (list)
 
 def log2n(n):
-  return 1 + log2n(n/2) if (n > 1) else 0
+  return math.log(n, 2)
 
 #log2(n)
 def N2():
